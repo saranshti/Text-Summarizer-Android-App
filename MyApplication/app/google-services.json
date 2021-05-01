@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "932532063095",
+    "firebase_url": "https://flask-text-summary-default-rtdb.firebaseio.com",
+    "project_id": "flask-text-summary",
+    "storage_bucket": "flask-text-summary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932532063095:android:4f294981a10c20e36d2f72",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932532063095-56h0lb58e4emuoh6skcbddqm619skvuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9O5VgF2MBpgKBwYFGcBcJEIFPxx592-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932532063095-56h0lb58e4emuoh6skcbddqm619skvuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
