@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NoInternetActivity">
+
+    <LinearLayout
+        android:id="@+id/linera_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo"
+            android:transitionName="logo"/>
+        <TextView
+            android:id="@+id/txt_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHORT TEXT"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/textColor"
+            android:transitionName="logo_text"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linera_layout1"
+        android:visibility="gone">
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/no_int_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowColorDark="@color/dark_background"
+        app:neumorph_backgroundColor="@color/white">
+        <ImageView
+            android:id="@+id/img_img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/no_int"
+            android:layout_centerInParent="true"
+            />
+    </soup.neumorphism.NeumorphCardView>
+    <TextView
+        android:id="@+id/img_txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are not Connnected to the Internet."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/no_int_logo"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/textColor" />
+    <TextView
+        android:id="@+id/img2_txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make sure Wi-Fi is on, Airplane Mode is off"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_txt_logo"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/textColor" />
+    <TextView
+        android:id="@+id/img3_txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and try again."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img2_txt_logo"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/textColor" />
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_close_app"
+        app:neumorph_backgroundColor="#87CEEB"
+        app:neumorph_shadowColorDark="@color/dark_background"
+        style="@style/Widget.Neumorph.Button"
+        android:clickable="true"
+        android:layout_below="@+id/img3_txt_logo"
+        android:layout_gravity="bottom|end"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_height="75dp"
+        android:text="Close App"
+        />
+    </RelativeLayout>
+</RelativeLayout>
